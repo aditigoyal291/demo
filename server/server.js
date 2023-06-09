@@ -45,6 +45,7 @@ app.post('/create', (req, res) => {
     }
     users.push(newUser);
     console.log(users);
+    res.redirect('getAll');
     res.sendStatus(201);
 })
 
